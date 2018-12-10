@@ -1,21 +1,18 @@
-#include "addedge.h"
-int AddVertex(int chart[][100], int length)
+
+#include "addpoint.h"
+
+void AddEdag(int chart[][100])
 {
-	int n, num, m;
-	num = length;
-	n = num;
-	chart[num][num] = 0;
-	while (num) {
-	loop:
-		cout << "请输入新节点与节点" << num << "的距离：" << endl;
-		cin >> m;
-		if (m == 0) { cout << "输入错误" << endl; goto loop; }
-		else {
-			--num;
-			chart[n][num] = m;
-			chart[num][n] = chart[n][num];
-		}
-	}
-	length = length + 1;
-	return length;
+	int st, end;
+	cout << "请输入边的任意一个节点：" << endl;
+	cin >> st;
+	cout << "请输入另一节点值：" << endl;
+	cin >> end;
+	--st;
+	--end;
+	cout << "输入权重：" << endl;
+	cin >> chart[st][end];
+	chart[end][st] = chart[st][end];
+	cout << chart[st][end] << endl;
+	cout << " ";
 }
