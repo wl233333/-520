@@ -6,6 +6,10 @@ void Printlyb(int chart[][100], int length)
 	int u, v = 1, num, w, k, min;
 	cout << "输入要查看的路由器编号" << endl;
 	cin >> v;
+	if (v > length) {
+		cout << "路由器不存在" << endl;
+	}
+	else {
 		v = v - 1;
 		for (int i = 0; i < length; ++i) {
 			s[i] = 0;
@@ -40,12 +44,14 @@ void Printlyb(int chart[][100], int length)
 				}
 			}
 		}
-	int i = 0;
-	cout << "目的路由器  " << "下一跳 " << endl;
-	while (i < length) {
-		if (i == v) { ++i; continue; }
-		cout << i + 1 << "            " << list[i] + 1 << "  " << endl;
-		++i;
+		int i = 0;
+		cout << "目的路由器  " << "下一跳 " << endl;
+		while (i < length) {
+			if (i == v) { ++i; continue; }
+			cout << i + 1 << "            " << list[i] + 1 << "  " << endl;
+			++i;
+		}
+		cout << "" << endl;;
 	}
-	cout << "" << endl;;
+
 }
