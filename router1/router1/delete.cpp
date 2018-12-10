@@ -3,6 +3,7 @@ int DeleteVertex(int chart[][100], int length)
 {
 	int n, num, i, j;
 	num = length;
+	cout << "weili" << endl;
 	cout << "当前节点数目为：" << num << endl;
 	cout << "请输入删除节点名：";
 	cin >> n;
