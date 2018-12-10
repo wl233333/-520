@@ -5,6 +5,7 @@ int DeleteVertex(int chart[][100], int length)
 	num = length;
 	cout << "当前节点数目为：" << num << endl;
 	cout << "请输入删除节点名：";
+	cout << "你好";
 	cin >> n;
 	cout << chart[0][8] << endl;
 	n -= 1;
