@@ -9,7 +9,7 @@ using namespace std;
 int main() {
 	int length = 9, chart[N][N];//length为数组长度，chart为网络图转化的二维数组
 	int a;
-	cout << "          ********控制菜单*******" << endl;
+	cout << "         ********控制菜单*******" << endl;
 	cout << "输入1输出路由表			输入2增加操作" << endl;
 	cout << "输入3删除操作			输入4结束应用" << endl;
 	cout << endl;
