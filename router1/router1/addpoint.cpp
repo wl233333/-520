@@ -13,4 +13,4 @@ void AddEdag(int chart[][100])
 	cin >> chart[st][end];
 	chart[end][st] = chart[st][end];
 	cout << chart[st][end] << endl;
-}
+}//
